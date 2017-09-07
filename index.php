@@ -151,7 +151,7 @@ if (defined('ENVIRONMENT'))
 	// Is the system path correct?
 	if ( ! is_dir($system_path))
 	{
-		exit("Your system folder path does not appear to be set correctly. Please open the following file and correct this: ".pathinfo(__FILE__, PATHINFO_BASENAME));
+		//exit("Your system folder path does not appear to be set correctly. Please open the following file and correct this: ".pathinfo(__FILE__, PATHINFO_BASENAME));
 	}
 
 /*
@@ -185,7 +185,7 @@ if (defined('ENVIRONMENT'))
 	{
 		if ( ! is_dir(BASEPATH.$application_folder.'/'))
 		{
-			exit("Your application folder path does not appear to be set correctly. Please open the following file and correct this: ".SELF);
+			//exit("Your application folder path does not appear to be set correctly. Please open the following file and correct this: ".SELF);
 		}
 
 		define('APPPATH', BASEPATH.$application_folder.'/');
